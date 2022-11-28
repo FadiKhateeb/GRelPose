@@ -43,192 +43,190 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://www.linkedin.com/in/fadi-khateeb/">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-    </div>
-
-  </div>
-</nav>
-
-
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-          <div class="column has-text-centered">
-              <h1 class="title is-1 publication-title">GRelPose: Generalizable End-to-End Relative Camera Pose Regression</h1>
-              <div class="is-size-5 publication-authors">
-                  <span class="author-block">
-                      <a href="https://www.linkedin.com/in/fadi-khateeb/">Fadi Khatib</a>*,
-                  </span>
-                  <span class="author-block">
-                      <a href="https://www.linkedin.com/in/yuval-margalit-9688431b7/">Yuval Margalit</a>*,
-                  </span>
-                  <span class="author-block">
-                      <a href="https://www.weizmann.ac.il/math/meirav/">Meirav Galun</a>,
-                  </span>
-                  <span class="author-block">
-                      <a href="https://www.weizmann.ac.il/math/ronen/home">Ronen Basri</a>
-                  </span>
-              </div>
-
-              <div class="is-size-5 publication-authors">
-                  <span class="author-block">Weizmann Institute of Science</span>
-              </div>
-
-              <div class="is-size-6 publication-authors">
-                  <span class="author-block">* Equal contribution</span>
-              </div>
-
-              <div class="column has-text-centered">
-                  <div class="publication-links">
-                      <!-- PDF Link. -->
-                      <span class="link-block">
-                          <a href="https://arxiv.org/pdf/2011.12948"
-                             class="external-link button is-normal is-rounded is-dark">
-                              <span class="icon">
-                                  <i class="fas fa-file-pdf"></i>
-                              </span>
-                              <span>Paper</span>
-                          </a>
-                      </span>
-                      <span class="link-block">
-                          <a href="https://arxiv.org/abs/2011.12948"
-                             class="external-link button is-normal is-rounded is-dark">
-                              <span class="icon">
-                                  <i class="ai ai-arxiv"></i>
-                              </span>
-                              <span>arXiv</span>
-                          </a>
-                      </span>
-                      <!-- Code Link. -->
-                      <span class="link-block">
-                          <a href="https://github.com/google/nerfies"
-                             class="external-link button is-normal is-rounded is-dark">
-                              <span class="icon">
-                                  <i class="fab fa-github"></i>
-                              </span>
-                              <span>Code</span>
-                          </a>
-                      </span>
-                  </div>
-
-              </div>
-          </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
-          </p>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
+        <div class="navbar-menu">
+            <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                <a class="navbar-item" href="https://www.linkedin.com/in/fadi-khateeb/">
+                    <span class="icon">
+                        <i class="fas fa-home"></i>
+                    </span>
+                </a>
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+
         </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
-  </div>
-</section>
+    </nav>
 
 
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">GRelPose: Generalizable End-to-End Relative Camera Pose Regression</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href="https://www.linkedin.com/in/fadi-khateeb/">Fadi Khatib</a>*,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://www.linkedin.com/in/yuval-margalit-9688431b7/">Yuval Margalit</a>*,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://www.weizmann.ac.il/math/meirav/">Meirav Galun</a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://www.weizmann.ac.il/math/ronen/home">Ronen Basri</a>
+                            </span>
+                        </div>
 
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">Weizmann Institute of Science</span>
+                        </div>
 
+                        <div class="is-size-6 publication-authors">
+                            <span class="author-block">* Equal contribution</span>
+                        </div>
 
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/2011.12948"
+                                       class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2011.12948"
+                                       class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                                    <a href="https://github.com/google/nerfies"
+                                       class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+                            </div>
 
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
-  </div>
-</section>
+    </section>
 
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>
+
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            We present the first method capable of photorealistically reconstructing a non-rigidly
+                            deforming scene using photos/videos captured casually from mobile phones.
+                        </p>
+                        <p>
+                            Our approach augments neural radiance fields
+                            (NeRF) by optimizing an
+                            additional continuous volumetric deformation field that warps each observed point into a
+                            canonical 5D NeRF.
+                            We observe that these NeRF-like deformation fields are prone to local minima, and
+                            propose a coarse-to-fine optimization method for coordinate-based models that allows for
+                            more robust optimization.
+                            By adapting principles from geometry processing and physical simulation to NeRF-like
+                            models, we propose an elastic regularization of the deformation field that further
+                            improves robustness.
+                        </p>
+                        <p>
+                            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
+                            photos/videos into deformable NeRF
+                            models that allow for photorealistic renderings of the subject from arbitrary
+                            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
+                            using a
+                            rig with two mobile phones that take time-synchronized photos, yielding train/validation
+                            images of the same pose at different viewpoints. We show that our method faithfully
+                            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
+                            fidelity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
+            <!-- Paper video. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Video</h2>
+                    <div class="publication-video">
+                        <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--/ Paper video. -->
+        </div>
+    </section>
+
+
+
+
+    <section class="section">
+        <!-- Concurrent Work. -->
+        <div class="columns is-centered">
+            <div class="column is-full-width">
+                <h2 class="title is-3">Related Links</h2>
+
+                <div class="content has-text-justified">
+                    <p>
+                        There's a lot of excellent work that was introduced around the same time as ours.
+                    </p>
+                    <p>
+                        <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+                    </p>
+                    <p>
+                        <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
+                        both use deformation fields to model non-rigid scenes.
+                    </p>
+                    <p>
+                        Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
+                    </p>
+                    <p>
+                        There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/ Concurrent Work. -->
+        </div>
+    </section>
+
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>
     @article{park2021nerfies,
     author    = {},
     title     = {GRelPose: Generalizable End-to-End Relative Camera Pose Regression},
@@ -236,35 +234,35 @@
     year      = {},
     }
 </code></pre>
-  </div>
-</section>
-
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/FadiKhateeb" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-            <p>
-                This website is forked from the
-                <a href="https://nerfies.github.io/">Nerfies website</a> and
-                <a href="https://github.com/nerfies/nerfies.github.io">source code</a>
-            </p>
         </div>
-      </div>
-    </div>
-  </div>
-</footer>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <a class="icon-link"
+                   href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+                <a class="icon-link" href="https://github.com/FadiKhateeb" class="external-link" disabled>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This website is forked from the
+                            <a href="https://nerfies.github.io/">Nerfies website</a> and
+                            <a href="https://github.com/nerfies/nerfies.github.io">source code</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
