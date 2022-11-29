@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="Generalizable End-to-End Relative Camera Pose Regression.">
+  <meta name="keywords" content="Relative-pose">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Under Reconstruction</title>
+  <title>GRelPose: Generalizable End-to-End Relative Camera Pose Regression</title>
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -98,7 +98,7 @@
                             <div class="publication-links">
                                 <!-- PDF Link. -->
                                 <span class="link-block">
-                                    <a href="https://arxiv.org/pdf/2011.12948"
+                                    <a href="https://arxiv.org/pdf/2211.14950"
                                        class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fas fa-file-pdf"></i>
@@ -107,7 +107,7 @@
                                     </a>
                                 </span>
                                 <span class="link-block">
-                                    <a href="https://arxiv.org/abs/2011.12948"
+                                    <a href="https://arxiv.org/abs/2211.14950"
                                        class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="ai ai-arxiv"></i>
@@ -144,31 +144,20 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            We present the first method capable of photorealistically reconstructing a non-rigidly
-                            deforming scene using photos/videos captured casually from mobile phones.
+                            This paper proposes a generalizable, end-to-end deep learning-based method for relative pose regression between two images.
+                            Given two images of the same scene captured from different viewpoints,
+                            our algorithm predicts the relative rotation and translation between the two respective cameras.
+                         </p>
+                        <p>
+                            Despite recent progress in the field, current deep-based methods exhibit only limited generalization to scenes not seen in training.
+                            Our approach introduces a network architecture that extracts a grid of coarse features for each input image using the pre-trained LoFTR network.
+                            It subsequently relates corresponding features in the two images,
+                            and finally uses a convolutional network to recover the relative rotation and translation between the respective cameras.
                         </p>
                         <p>
-                            Our approach augments neural radiance fields
-                            (NeRF) by optimizing an
-                            additional continuous volumetric deformation field that warps each observed point into a
-                            canonical 5D NeRF.
-                            We observe that these NeRF-like deformation fields are prone to local minima, and
-                            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-                            more robust optimization.
-                            By adapting principles from geometry processing and physical simulation to NeRF-like
-                            models, we propose an elastic regularization of the deformation field that further
-                            improves robustness.
-                        </p>
-                        <p>
-                            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-                            photos/videos into deformable NeRF
-                            models that allow for photorealistic renderings of the subject from arbitrary
-                            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-                            using a
-                            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-                            images of the same pose at different viewpoints. We show that our method faithfully
-                            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-                            fidelity.
+                            Our experiments indicate that the proposed architecture can generalize to novel scenes,
+                            obtaining higher accuracy than existing deep-learning-based methods in various settings and datasets,
+                            in particular with limited training data.
                         </p>
                     </div>
                 </div>
@@ -184,18 +173,15 @@
         <div class="container is-max-desktop content">
             <h2 class="title">BibTeX</h2>
             <pre><code>
-    @article{park2021nerfies,
-    author    = {},
+    @article{,
+    author    = {Khatib, Fadi and Margalit, Yuval and Galun, Meirav and Basri, Ronen},
     title     = {GRelPose: Generalizable End-to-End Relative Camera Pose Regression},
-    journal   = {},
-    year      = {},
+    journal   = {arXiv preprint arXiv:2211.14950},
+    year      = {2022},
     }
 </code></pre>
         </div>
     </section>
-
-
-
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
@@ -216,6 +202,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
