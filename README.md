@@ -4,11 +4,11 @@ This is the repository that contains source code for the [GRelPose website](http
 
 If you find GRelPose useful for your work please cite:
 ```
-@article{,
-  author    = {Khatib, Fadi and Margalit, Yuval and Galun, Meirav and Basri, Ronen},
-  title     = {GRelPose: Generalizable End-to-End Relative Camera Pose Regression},
-  journal   = {arXiv preprint arXiv:2211.14950},
-  year      = {2022},
+@article{khatib2022grelpose,
+  title={GRelPose: Generalizable End-to-End Relative Camera Pose Regression},
+  author={Khatib, Fadi and Margalit, Yuval and Galun, Meirav and Basri, Ronen},
+  journal={arXiv preprint arXiv:2211.14950},
+  year={2022}
 }
 ```
 
