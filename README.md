@@ -1,4 +1,4 @@
-# Nerfies
+# GRelPose
 
 This is the repository that contains source code for the [GRelPose website](https://fadikhateeb.github.io/GRelPose/).
 

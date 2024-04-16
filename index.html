@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Generalizable End-to-End Relative Camera Pose Regression.">
+        content="Leveraging Image Matching Toward End-to-End Relative Camera Pose Regression">
   <meta name="keywords" content="Relative-pose">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GRelPose: Generalizable End-to-End Relative Camera Pose Regression</title>
+  <title>Leveraging Image Matching Toward End-to-End Relative Camera Pose Regression</title>
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -70,10 +70,10 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-1 publication-title">GRelPose: Generalizable End-to-End Relative Camera Pose Regression</h1>
+                        <h1 class="title is-1 publication-title">Leveraging Image Matching Toward End-to-End Relative Camera Pose Regression</h1>
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
-                                <a href="https://fadikhateeb.github.io/">Fadi Khatib</a>*,
+                                <a href="https://fadikhatib.github.io/">Fadi Khatib</a>*,
                             </span>
                             <span class="author-block">
                                 <a href="https://www.linkedin.com/in/yuval-margalit-9688431b7/">Yuval Margalit</a>*,
@@ -144,20 +144,15 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            This paper proposes a generalizable, end-to-end deep learning-based method for relative pose regression between two images.
-                            Given two images of the same scene captured from different viewpoints,
-                            our algorithm predicts the relative rotation and translation between the two respective cameras.
+                            This paper proposes a generalizable, end-to-end deep learning-based method for relative pose regression between two images. Given two images of the same scene captured from different viewpoints, our method predicts the relative rotation and translation (including direction and scale) between the two respective cameras.
                          </p>
                         <p>
-                            Despite recent progress in the field, current deep-based methods exhibit only limited generalization to scenes not seen in training.
-                            Our approach introduces a network architecture that extracts a grid of coarse features for each input image using the pre-trained LoFTR network.
-                            It subsequently relates corresponding features in the two images,
-                            and finally uses a convolutional network to recover the relative rotation and translation between the respective cameras.
+                            Inspired by the classical pipeline, our method leverages Image Matching
+(IM) as a pre-trained task for relative pose regression.
+Specifically, we use LoFTR, an architecture that utilizes an attention-based network pre-trained on Scannet, to extract semi-dense feature maps, which are then warped and fed into a pose regression network. Notably, we use a loss function that utilizes separate terms to account for the translation direction and scale. We believe such a separation is important because translation direction is determined by point correspondences while the scale is inferred from prior on shape sizes. Our ablations further support this choice.
                         </p>
                         <p>
-                            Our experiments indicate that the proposed architecture can generalize to novel scenes,
-                            obtaining higher accuracy than existing deep-learning-based methods in various settings and datasets,
-                            in particular with limited training data.
+                            We evaluate our method on several datasets and show that it outperforms previous end-to-end methods. The method also generalizes well to unseen datasets.
                         </p>
                     </div>
                 </div>
